@@ -24,6 +24,7 @@ public class ControllerTask {
             @Override
             public void run() {//业务代码
                 System.out.println("this is timeTask:"+new Date());
+                System.out.println("this is test");
             }
         };
         threadPoolTaskScheduler.schedule(runnable,new CronTrigger("0/5 * * * * *"));
